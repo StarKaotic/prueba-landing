@@ -1,0 +1,98 @@
+:root{
+    --main-text-color: #361D32;
+    --main-pink-light-color: #F1E8E6;
+    --main-purple-color: #543C52;
+    --main-orange-color: #F55951;
+    --main-pink-color: #EDD2CB;
+
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('./font/alegreya/Alegreya-VariableFont_wght.ttf');
+  }
+
+body{
+    background-color:var(--main-text-color);
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Alegreya";
+  
+}
+
+.nav-link{
+    font-family: "Alegreya";
+    font-size: 18px;
+    color:var(--main-purple-color);
+    text-decoration: none;
+
+    
+}
+
+.header{
+    background-color: #fff;
+    padding: 0.5rem;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header-container{
+    width: 100%;
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+
+
+header nav ul{
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+gap: 3rem;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.hero > div:nth-child(1){
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero div div {
+    flex: 1;
+}
+
+.hero >div div:nth-child(1) h1 {
+    color: var(--main-pink-light-color);
+}
+
+.hero >div div:nth-child(1) p{
+    color: var(--main-pink-light-color);
+}
+
+.hero >div div:nth-child(2) img{
+   width: 400px;
+}
+
+.hero div div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
