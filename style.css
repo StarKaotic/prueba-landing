@@ -67,7 +67,7 @@ gap: 3rem;
 
 }
 
-.hero > div:nth-child(1){
+.section-container{
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -96,3 +96,42 @@ gap: 3rem;
     justify-content: center;
     align-items: center;
 }
+
+.primary-button{
+    display: block;
+    background-color: var(--main-orange-color);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 24px 10px 24px;
+    color: #fff;
+    width: fit-content;
+
+}
+
+.secundary-button{
+    display: block;
+    background: transparent;
+    border:  var(--main-orange-color) solid 1px;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 24px 10px 24px;
+    color: var(--main-orange-color);
+}
+
+.hero-button{
+     
+    display: flex;
+    gap: 50px;
+    margin-top: 3rem; 
+}
+
+.section-2 div div  h1 {
+    color: var(--main-pink-light-color);
+
+
+}
+
+.section-2 div div p{
+    color: var(--main-pink-light-color);
+}
+
