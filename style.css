@@ -18,7 +18,7 @@ body{
     margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     font-family: "Alegreya";
   
 }
@@ -135,3 +135,93 @@ gap: 3rem;
     color: var(--main-pink-light-color);
 }
 
+.about-us{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+ }    
+
+.about-container{
+    width: 100%;
+    max-width: 684px;
+    align-items: center;
+    z-index: 10;
+    
+    
+}
+
+.about-us div h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 82px;
+    color: var(--main-pink-light-color);
+   
+}
+
+
+
+.about-us div  p{
+ color: var(--main-pink-light-color);
+ text-align: center;
+ 
+ 
+}
+
+.about-us img:nth-child(1){
+     position: absolute;
+     
+     left: 0;
+     bottom: 0;
+}
+
+.about-us img:nth-child(2){
+    position:  absolute;
+    top: 0;
+    right: 0;
+}
+
+.pricing-section{
+    background-color: var(--main-pink-color);
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.section-container > div{
+    width: 100%;
+}
+
+.pricing-section-title{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: var(--main-purple-color);
+
+}
+.pricing-grid-box{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: var(--main-purple-color);
+     background-color: var(--main-pink-light-color);
+     align-items: center;
+
+}
+
+.divide{
+    background-color: var(--main-pink-color);
+}
+
+h1{
+    font-size: 48px;
+}
+
+.pricing.text-xl{
+    font-size: 30px;
+}
