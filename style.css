@@ -280,4 +280,71 @@ h1{
 .pracing-list-item p{
     font-family: "Source-sans-pro";
 }
-  
+
+.testimonies{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonies h1 {
+    color: var(--main-pink-color);
+    text-align: center;
+    margin-top: 107px;
+    margin-bottom: 13px;
+}
+
+.testimonies > p {
+
+    color: var(--main-pink-color);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 53px;
+}
+
+.testimonies-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 50px;
+    
+}
+
+.testimonies-card{
+ display: flex;
+ background-color: var(--main-pink-color);
+ border-radius: 1rem;
+ gap: 36px;
+ padding: 34px;
+ width: 509px;
+ flex-shrink: 0;
+ 
+
+}
+
+.testimonies-card img{
+    border-radius: 100%;
+    width: 92px;
+    height: 91px;  
+}
+
+.testimonies-card div h3{
+    font-size: 30px;
+}
+
+.testimonies-card-star-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.testimonies-card-star-container img{
+    width: 24px;
+    height: 24px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
