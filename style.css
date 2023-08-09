@@ -344,7 +344,81 @@ h1{
     height: 24px;
 }
 
+.contact{
+    margin-top: 150px;
+}
+
 .contact-container{
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact  h1{
+   text-align: center;
+   color: var(--main-pink-color);
+}
+
+.contact > div {
+    display: flex;
+    justify-content: center;
+    gap: 184px;
+    position: relative;
+}
+
+.contact > div > div {
+    position: relative;
+}
+
+
+.contact-form input{
+    display: block;
+}
+
+.contact-form textarea{
+    display: block;
+}
+
+.input-row{
+    display: flex;
+    gap: 22px;
+    margin-bottom: 2rem;
+}
+
+.mensaje-contact textarea{
+    width: 100%;
+}
+
+.contact-form{
+    background-color: var(--main-pink-light-color);
+    padding: 50px 39px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-form-img-1{
+    position: absolute;
+    top: -180px;
+    right: -158px;
+}
+
+.contact-form-img-2{
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+}
+
+.contact-form-img-3{
+    position: absolute;
+    right: 164px;
+    bottom: 0;
+    z-index: 10;
+}
+
+.button-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
 }
