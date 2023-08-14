@@ -346,6 +346,8 @@ h1{
 
 .contact{
     margin-top: 150px;
+    margin-bottom: 90px;
+    
 }
 
 .contact-container{
@@ -413,7 +415,7 @@ h1{
 .contact-form-img-3{
     position: absolute;
     right: 164px;
-    bottom: 0;
+    bottom: 49px;
     z-index: 10;
 }
 
@@ -421,4 +423,57 @@ h1{
     display: flex;
     justify-content: center;
     margin-top: 13px;
+}
+
+.input-container input{
+    border-radius: 8px;
+    padding: 2px;
+    border: solid 1px #F55951; 
+    height: 28px;
+
+}
+
+.mensaje-contact textarea{
+    border-radius: 8px;
+    padding: 2px;
+    border: solid 1px #F55951;
+    height: 85px;
+}
+
+.footer{
+    background:var(--main-pink-color);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.footer div:nth-child(2){
+    background-color: var(--main-pink-light-color);
+}
+
+.footer > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    
+}
+
+.footer div:nth-child(3) img{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 26px;
+
+}
+
+.footer div:nth-child(2) img{
+    width: 66px;
+    height: 41px;
+   
+   
+}
+
+.footer div div {
+    width: 66px;
+    height: 41px;
 }
