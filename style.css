@@ -561,5 +561,58 @@ h1{
     .header .header-container .icon-menu img {
         width: 30px;
     }
+
+    .input-icon:checked + .check-icon{
+       background: #361D32;
+    }
+
+    .check-icon{
+    
+    }
+    
+    @font-face {
+        font-family: "Lobster";
+        @import url:('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    }
+
+    .icon-item{
+        font-family: "Lobster" ;
+        color: #f70303;
+    }
+
+    .input-icon {
+        display: none;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    
+
+    .icon-menu-container{
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon-item{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 5rem;
+        text-decoration: none;
+    }
+
+    .icon-item::after{
+        content:"";
+        display: block;
+        background: #fff;
+        width: 90%;
+        margin-top: 3px;
+        height: 3px;
+    }
    
 }
