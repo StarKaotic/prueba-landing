@@ -17,6 +17,11 @@
     src: ur('./font/Source/sans7pro/source-sans-pro.regular.ttf');
 }
 
+@font-face {
+    font-family: "Lobster";
+    @import url:('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+}
+
 body{
     background-color:var(--main-text-color);
     padding: 0;
@@ -25,21 +30,17 @@ body{
 
 h1,h2,h3,h4,h5,h6,p{
     font-family: "Alegreya";
-  
 }
-
-.icon-menu{
-    display: none;
-}
-
 
 .nav-link{
     font-family: "Alegreya";
     font-size: 18px;
     color:var(--main-purple-color);
-    text-decoration: none;
+    text-decoration: none;  
+}
 
-    
+.icon{
+    display: none;
 }
 
 .header{
@@ -488,7 +489,7 @@ h1{
     height: 41px;
 }
 
-/* Estilos responsivos Media Query*/
+/* Estilos responsivos Media Query Celular*/
 
 @media screen and (max-width: 540px) {
     .section-container{
@@ -544,75 +545,138 @@ h1{
        flex-direction: column;
     }
 
-    .icon-menu{
-        width: 50px;
-    }
+    /*Estos estilos de abajo es del icono de menu del celular*/
 
-    .header .header-container nav {
+    nav{
         display: none;
     }
 
-    .header .header-container .icon-menu{
-        
-        display: block;
-        
+    .input-icon:checked + .menu-container{
+       display: block;
     }
 
-    .header .header-container .icon-menu img {
-        width: 30px;
-    }
-
-    .input-icon:checked + .check-icon{
-       background: #361D32;
-    }
-
-    .check-icon{
-    
-    }
-    
-    @font-face {
-        font-family: "Lobster";
-        @import url:('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-    }
 
     .icon-item{
         font-family: "Lobster" ;
         color: #f70303;
     }
 
-    .input-icon {
+    .icon .input-icon{
         display: none;
     }
 
-    .icon-menu{
+    .menu-container a {
+        display: block;
+        text-decoration: none;   
+    }
+
+    .menu-container{
+        position: absolute;
+        padding: 30px;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        background-color: #fff;
+        display: none;
+        border-radius: 4px;
+        box-shadow: -9px 10px 11px 3px rgba(0,0,0,0.45);
+        -webkit-box-shadow: -9px 10px 11px 3px rgba(0,0,0,0.45);
+        -moz-box-shadow: -9px 10px 11px 3px rgba(0,0,0,0.45);
+    }
+
+    .icon{
+        position: relative;
+    }
+}
+
+
+
+/* Estilos responsivos Media Query tablet*/
+
+   @media screen and (max-width: 1200px) {
+
+    .icon{
+        display: block;
+        position: relative;
+    }
+
+    nav{
         display: none;
     }
 
-    
-
-    .icon-menu-container{
-        display: flex;
-        height: 100%;
-        width: 90%;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
+    .input-icon:checked + .menu-container{
+       display: block;
     }
+
 
     .icon-item{
-        display: grid;
-        grid-auto-flow: column;
-        gap: 5rem;
-        text-decoration: none;
+        font-family: "Lobster" ;
+        color: #f70303;
     }
 
-    .icon-item::after{
-        content:"";
-        display: block;
-        background: #fff;
-        width: 90%;
-        margin-top: 3px;
-        height: 3px;
+    .icon .input-icon{
+        display: none;
     }
+
+    .menu-container a {
+        display: block;
+        text-decoration: none;   
+    }
+
+    .menu-container{
+        position: absolute;
+        padding: 30px;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        background-color: #fff;
+        display: none;
+        border-radius: 4px;
+        box-shadow: -9px 10px 11px 3px rgba(0,0,0,0.45);
+        -webkit-box-shadow: -9px 10px 11px 3px rgba(0,0,0,0.45);
+        -moz-box-shadow: -9px 10px 11px 3px rgba(0,0,0,0.45);
+    }
+
+    /*esta parte sera hasta de 1200px de tablet*/
+
+    .hero >div div:nth-child(2) img {
+        width: 300px;
+    }
+
+    .section-container{
+        padding: 2rem;
+    }
+
+    .menu-container .menu-item{
+        font-family: "Lobster" ;
+    }
+
+    .section-2 .section-container img{
+        width: 260p;
+    }
+   
+    .pricing-section .section-container div .pricing-grid{
+        grid-template-columns: repeat(3,200px) ;
+
+    }
+
+    .contact .contact-container > img{
+        width: 216px;
+        height: 230px;
+    }
+
+    .contact > div{
+        gap: 31px;
+    }
+
+    .contact-form-img-3{
+        left: 135px;
+    }
+    
+       
+
+
+
+    
    
 }
