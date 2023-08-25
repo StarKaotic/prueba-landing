@@ -14,7 +14,7 @@
 
 @font-face {
     font-family:"Source-sans-pro";
-    src: ur('./font/Source/sans7pro/source-sans-pro.regular.ttf');
+    src: url('./font/Source/sans7pro/source-sans-pro.regular.ttf');
 }
 
 @font-face {
