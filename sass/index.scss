@@ -1,3 +1,15 @@
+@import './variables.scss';
+@import './typography.scss';
+
+body{
+    background-color: $main-text-color;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "Alegreya";
+}
 
 .header{
     //stilos del header
@@ -19,4 +31,132 @@
         display: none;
     }
 
+    & .header-container nav ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 3rem;
+    li{
+        .nav-link{
+            font-family: "Alegreya";
+            font-size: 18px;
+            color:var(--main-purple-color);
+            text-decoration: none;  
+        }
+    
+        }
+    }
 }
+
+.hero{
+     display: flex;
+     justify-content: center;
+     margin-top: 56px;
+        
+    & > .section-container{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        &  div{
+          div {
+            flex: 1;
+        }  
+        } 
+
+        & >div div:nth-child(1) h1 {
+            color: ($main-pink-light-color);
+        }
+
+        & >div div:nth-child(1) p{
+            color: ($main-pink-light-color);
+        }
+        
+        & >div div:nth-child(2) img{
+           width: 400px;
+        }
+
+        & div div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .primary-button{
+            display: block;
+            background-color: ($main-orange-color);
+            text-decoration: none;
+            border-radius: 8px;
+            padding: 10px 24px 10px 24px;
+            color: #fff;
+            width: fit-content;
+        
+        }
+
+        .secundary-button{
+            display: block;
+            background: transparent;
+            border:  ($main-orange-color) solid 1px;
+            text-decoration: none;
+            border-radius: 8px;
+            padding: 10px 24px 10px 24px;
+            color: ($main-orange-color);
+        }
+        
+        & .section-container .hero-button{
+     
+            display: flex;
+            gap: 50px;
+            margin-top: 3rem; 
+        }
+    
+}
+
+.section-2{
+    display: flex;
+    justify-content: center;
+
+    & div{
+        div{
+            h1{
+                color: ($main-pink-light-color);
+            }
+        }
+    }
+
+    & div{
+        div{
+            p{
+               color: ($main-pink-light-color);
+            }
+        }
+     
+    }   
+
+}
+
+.about-us{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 600px; 
+    
+    & > .about-container{
+        width: 100%;
+        max-width: 684px;
+        align-items: center;
+        z-index: 10;
+    }
+    .about-us div h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 82px;
+        color: ($main-pink-light-color);
+    }
+
+}
+

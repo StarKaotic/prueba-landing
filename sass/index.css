@@ -1,3 +1,13 @@
+body {
+  background-color: #361D32;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Alegreya";
+}
+
 .header {
   background-color: #fff;
   padding: 0.5rem;
@@ -13,4 +23,101 @@
 }
 .header .icon {
   display: none;
+}
+.header .header-container nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 3rem;
+}
+.header .header-container nav ul li .nav-link {
+  font-family: "Alegreya";
+  font-size: 18px;
+  color: var(--main-purple-color);
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+.hero > .section-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero div div {
+  flex: 1;
+}
+.hero > div div:nth-child(1) h1 {
+  color: #F1E8E6;
+}
+.hero > div div:nth-child(1) p {
+  color: #F1E8E6;
+}
+.hero > div div:nth-child(2) img {
+  width: 400px;
+}
+.hero div div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .primary-button {
+  display: block;
+  background-color: #F55951;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 10px 24px 10px 24px;
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .secundary-button {
+  display: block;
+  background: transparent;
+  border: #F55951 solid 1px;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 10px 24px 10px 24px;
+  color: #F55951;
+}
+.hero .section-container .hero-button {
+  display: flex;
+  gap: 50px;
+  margin-top: 3rem;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+}
+.section-2 div div h1 {
+  color: #F1E8E6;
+}
+.section-2 div div p {
+  color: #F1E8E6;
+}
+
+.about-us {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+.about-us > .about-container {
+  width: 100%;
+  max-width: 684px;
+  align-items: center;
+  z-index: 10;
+}
+.about-us .about-us div h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 82px;
+  color: #F1E8E6;
 }/*# sourceMappingURL=index.css.map */
